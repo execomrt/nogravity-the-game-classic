@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>ng_win32</RootNamespace>
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{BFDAF64E-ED3F-45D1-B305-92C0F07742D2}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.31320.204</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\rlx32\include;..\..;..\..\..\SDK\zlib-1.2.1;..\..\..\SDK\lpng125;..\..\..\SDK;..\..\..\SDK\oggvorbis\include;\DXSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;DIRECTINPUT_VERSION=0x0800;DIRECTDRAW_VERSION=0x0600;DIRECTSOUND_VERSION=0x0800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Release\ng_w32.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dinput8.lib;dxguid.lib;dsound.lib;comctl32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bin\nogravity.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release\ng_w32.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release\ng_w32.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\rlx32\include;..\..;..\..\..\SDK\zlib-1.2.1;..\..\..\SDK\lpng125;..\..\..\SDK;..\..\..\SDK\oggvorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DIRECTINPUT_VERSION=0x0800;DIRECTDRAW_VERSION=0x0600;DIRECTSOUND_VERSION=0x0800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Debug\ng_w32.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dinput8.lib;dxguid.lib;dsound.lib;comctl32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\Bin\nogravity.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug\ng_w32.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug\ng_w32.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\rlx32\src\gui_os.c" />
+    <ClCompile Include="..\..\..\rlx32\src\gx_alloc.c" />
+    <ClCompile Include="..\..\..\rlx32\src\gx_csp.c" />
+    <ClCompile Include="..\..\..\rlx32\src\gx_flc.c" />
+    <ClCompile Include="..\..\..\rlx32\src\gx_form.c" />
+    <ClCompile Include="..\..\..\rlx32\src\gx_init.c" />
+    <ClCompile Include="..\..\..\rlx32\src\gx_png.c" />
+    <ClCompile Include="..\..\..\rlx32\src\gx_rgb.c" />
+    <ClCompile Include="..\..\..\rlx32\src\gx_tool.c" />
+    <ClCompile Include="..\..\..\rlx32\src\iss_av.c" />
+    <ClCompile Include="..\..\..\rlx32\src\iss_cdc.c" />
+    <ClCompile Include="..\..\..\rlx32\src\iss_db.c" />
+    <ClCompile Include="..\..\..\rlx32\src\iss_form.c" />
+    <ClCompile Include="..\..\..\rlx32\src\iss_ogg.c" />
+    <ClCompile Include="..\..\..\rlx32\src\sysgi.c" />
+    <ClCompile Include="..\..\..\rlx32\src\sysini.c" />
+    <ClCompile Include="..\..\..\rlx32\src\syslist.c" />
+    <ClCompile Include="..\..\..\rlx32\src\sysresmx.c" />
+    <ClCompile Include="..\..\..\rlx32\src\systools.c" />
+    <ClCompile Include="..\..\..\rlx32\src\syszlib.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3xcoll.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3xdata.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3xmaps.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3xrend.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3xscen2.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3xscene.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3xsoft.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3x_1.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3x_2.c" />
+    <ClCompile Include="..\..\..\rlx32\src\v3x_3.c" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\dxerr.c" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\snd_ds6.cpp" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\snd_eax.cpp" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysdbg.c" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysjoy.cpp" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\syskeyb.cpp" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysmouse.cpp" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysnetw.cpp" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysreg.c" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysregw.c" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\systime.c" />
+    <ClCompile Include="..\..\..\rlx32\src\win32\systools.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\_stubw32.cpp" />
+    <ClCompile Include="..\..\..\rlx32\src\_stub.cpp" />
+    <ClCompile Include="..\preferences.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ng_w32.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\rlx32\include\config.h" />
+    <ClInclude Include="..\..\..\rlx32\include\fixops.h" />
+    <ClInclude Include="..\..\..\rlx32\include\gui_os.h" />
+    <ClInclude Include="..\..\..\rlx32\include\gx_cdc.h" />
+    <ClInclude Include="..\..\..\rlx32\include\gx_csp.h" />
+    <ClInclude Include="..\..\..\rlx32\include\gx_flc.h" />
+    <ClInclude Include="..\..\..\rlx32\include\gx_init.h" />
+    <ClInclude Include="..\..\..\rlx32\include\gx_rgb.h" />
+    <ClInclude Include="..\..\..\rlx32\include\gx_struc.h" />
+    <ClInclude Include="..\..\..\rlx32\include\gx_text.h" />
+    <ClInclude Include="..\..\..\rlx32\include\gx_tools.h" />
+    <ClInclude Include="..\..\..\rlx32\include\iss_av.h" />
+    <ClInclude Include="..\..\..\rlx32\include\iss_defs.h" />
+    <ClInclude Include="..\..\..\rlx32\include\iss_fx.h" />
+    <ClInclude Include="..\..\..\rlx32\include\rlx.h" />
+    <ClInclude Include="..\..\..\rlx32\include\syscpu.h" />
+    <ClInclude Include="..\..\..\rlx32\include\sysctrl.h" />
+    <ClInclude Include="..\..\..\rlx32\include\sysini.h" />
+    <ClInclude Include="..\..\..\rlx32\include\syslist.h" />
+    <ClInclude Include="..\..\..\rlx32\include\sysnetw.h" />
+    <ClInclude Include="..\..\..\rlx32\include\sysresmx.h" />
+    <ClInclude Include="..\..\..\rlx32\include\systime.h" />
+    <ClInclude Include="..\..\..\rlx32\include\systools.h" />
+    <ClInclude Include="..\..\..\rlx32\include\sys_gi.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xcoll.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xdefs.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xfloat.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xmaps.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xmaths.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xrend.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xscene.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xsort.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xtrig.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3xtypes.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3x_1.h" />
+    <ClInclude Include="..\..\..\rlx32\include\v3x_2.h" />
+    <ClInclude Include="..\..\..\rlx32\include\_rlx.h" />
+    <ClInclude Include="..\..\..\rlx32\include\_rlx32.h" />
+    <ClInclude Include="..\..\..\rlx32\include\_stub.h" />
+    <ClInclude Include="..\..\..\rlx32\src\ds_err.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ng.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,10 @@
+CVS
+Debug
+Release
+source/src/VC7.1/ng_soft/ng_soft.vcproj
+source/src/VC7.1/ng_opengl/ng_opengl.vcproj
+source/src/VC7.1/ng_glide/ng_glide.vcproj
+*.obj
+*.idb
+*.lastbuildstate
+*.user

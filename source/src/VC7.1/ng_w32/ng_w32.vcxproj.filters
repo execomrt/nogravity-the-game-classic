@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4c699046-d9eb-4448-b825-beae306edd9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{435ac141-42aa-41f4-b00b-83b4ff6e37c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{7a8739e1-0a4e-4baf-a4ea-5feeed5bbac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rlx32">
+      <UniqueIdentifier>{784bee6e-348f-4649-a87f-6d0472ec8229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rlx32\sys">
+      <UniqueIdentifier>{37502ad4-895e-420d-8d49-d843b4105ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rlx32\sys\renderer">
+      <UniqueIdentifier>{ef43f528-75e9-4ed1-adbe-9d7b30b29c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rlx32\gx">
+      <UniqueIdentifier>{14b202db-d860-4470-8df4-65cb66741229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rlx32\v3x">
+      <UniqueIdentifier>{31208a1d-4dc5-404a-a65f-fdbf2f8178d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rlx32\snd">
+      <UniqueIdentifier>{79478503-76b3-4615-abeb-231b0ae7265b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rlx32\include">
+      <UniqueIdentifier>{f5e947bf-58b2-4acb-a246-0c5c60766f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rlx32\gui">
+      <UniqueIdentifier>{316f7cff-2050-4355-8bbd-98942c28ed17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\rlx32\src\_stub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\_stubw32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\preferences.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\dxerr.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysdbg.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\sysgi.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\sysini.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysjoy.cpp">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\syskeyb.cpp">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\syslist.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysmouse.cpp">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysnetw.cpp">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysreg.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\sysregw.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\sysresmx.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\systime.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\systools.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\systools.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\syszlib.c">
+      <Filter>rlx32\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\gx_alloc.c">
+      <Filter>rlx32\gx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\gx_csp.c">
+      <Filter>rlx32\gx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\gx_flc.c">
+      <Filter>rlx32\gx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\gx_form.c">
+      <Filter>rlx32\gx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\gx_init.c">
+      <Filter>rlx32\gx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\gx_png.c">
+      <Filter>rlx32\gx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\gx_rgb.c">
+      <Filter>rlx32\gx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\gx_tool.c">
+      <Filter>rlx32\gx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3x_1.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3x_2.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3x_3.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3xcoll.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3xdata.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3xmaps.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3xrend.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3xscen2.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3xscene.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\v3xsoft.c">
+      <Filter>rlx32\v3x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\iss_av.c">
+      <Filter>rlx32\snd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\iss_cdc.c">
+      <Filter>rlx32\snd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\iss_db.c">
+      <Filter>rlx32\snd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\iss_form.c">
+      <Filter>rlx32\snd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\iss_ogg.c">
+      <Filter>rlx32\snd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\snd_ds6.cpp">
+      <Filter>rlx32\snd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\win32\snd_eax.cpp">
+      <Filter>rlx32\snd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rlx32\src\gui_os.c">
+      <Filter>rlx32\gui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ng_w32.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\src\ds_err.h">
+      <Filter>rlx32\snd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\_rlx.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\_rlx32.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\_stub.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\config.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\fixops.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\gui_os.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\gx_cdc.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\gx_csp.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\gx_flc.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\gx_init.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\gx_rgb.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\gx_struc.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\gx_text.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\gx_tools.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\iss_av.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\iss_defs.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\iss_fx.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\rlx.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\sys_gi.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\syscpu.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\sysctrl.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\sysini.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\syslist.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\sysnetw.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\sysresmx.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\systime.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\systools.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3x_1.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3x_2.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xcoll.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xdefs.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xfloat.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xmaps.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xmaths.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xrend.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xscene.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xsort.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xtrig.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rlx32\include\v3xtypes.h">
+      <Filter>rlx32\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ng.ico" />
+  </ItemGroup>
+</Project>

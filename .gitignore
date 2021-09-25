@@ -8,3 +8,4 @@ source/src/VC7.1/ng_glide/ng_glide.vcproj
 *.idb
 *.lastbuildstate
 *.user
+.vs

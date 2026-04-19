@@ -241,3 +241,4 @@ void CALLING_C Rend32bit_Fix_map_norm_G(V3XPOLY *fce)
 		    FINAL
     return;
 }
+

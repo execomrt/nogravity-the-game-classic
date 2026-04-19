@@ -66,5 +66,3 @@ class GX_BDirectWindow : public BDirectWindow
 
 #endif // _GX_BDirectWindow_HH
 
-
-

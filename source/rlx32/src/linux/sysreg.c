@@ -210,3 +210,4 @@ int STUB_RegistryWrite(STUB_Registry *regs)
     }
     else return 0;
 }
+

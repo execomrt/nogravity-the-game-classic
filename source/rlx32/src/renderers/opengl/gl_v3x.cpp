@@ -846,3 +846,4 @@ void GL_ResetViewport(void)
     glLoadIdentity();
     return;
 }
+

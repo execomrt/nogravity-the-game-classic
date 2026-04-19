@@ -38,21 +38,30 @@ extern struct RLXSYSTEM *g_pRLX;
 
 #include "sp.h"
 
-static u_int8_t m32[32][32];
-static u_int8_t a32[32][32];
-static u_int8_t s32[32][32];
-static u_int8_t a64[64][64];
-static u_int8_t s64[64][64];
+static u_int8_t m32[32][32];
+
+static u_int8_t a32[32][32];
+
+static u_int8_t s32[32][32];
+
+static u_int8_t a64[64][64];
+
+static u_int8_t s64[64][64];
+
 static u_int8_t m64[64][64];
 
 #define Tsize u_int16_t
 
 static __inline Tsize RGB_ADD(Tsize a, Tsize b)
 {
-   u_int32_t cR, cG, cB;
-	cB = a32[a&31][b&31]; a>>=5; b>>=5;
-	cG = a64[a&63][b&63]; a>>=6; b>>=6;
-	cR = a32[a&31][b&31];
+   u_int32_t cR, cG, cB;
+
+	cB = a32[a&31][b&31]; a>>=5; b>>=5;
+
+	cG = a64[a&63][b&63]; a>>=6; b>>=6;
+
+	cR = a32[a&31][b&31];
+
 	return (Tsize)(cB+(cG<<5)+(cR<<11));
 }
 
@@ -62,11 +71,16 @@ __end_extern_c
 
 Tsize RGB_MUL16(Tsize a, Tsize b)
 {
-	u_int32_t cR, cG, cB;
-	cB = m32[a&31][b&31]; a>>=5; b>>=5;
-	cG = m64[a&63][b&63]; a>>=6; b>>=6;
-	cR = m32[a&31][b&31];
-	return (Tsize)(cB+(cG<<5)+(cR<<11));
+	u_int32_t cR, cG, cB;
+
+	cB = m32[a&31][b&31]; a>>=5; b>>=5;
+
+	cG = m64[a&63][b&63]; a>>=6; b>>=6;
+
+	cR = m32[a&31][b&31];
+
+	return (Tsize)(cB+(cG<<5)+(cR<<11));
+
 }
 
 #define RGB_MUL RGBMUL16
@@ -512,19 +526,34 @@ void GX_GetSpriteInterfaceRef16(struct GXSYSTEM *pGX, GXSPRITEINTERFACE *p)
 	*p = g_gi;
 	
 
-	for (i=0;i<32;i++)
-	for (j=0;j<32;j++)
-	{
-		m32[i][j]=(u_int8_t)((i*j)>>5);
-		a32[i][j]=min(i+j, 31);
-		s32[i][j]=max(i-j, 0);
-	}
-
-	for (i=0;i<64;i++)
-	for (j=0;j<64;j++)
-	{
-		m64[i][j]=(u_int8_t)((i*j)>>6);
-		a64[i][j]=min(i+j, 63);
-		s64[i][j]=max(i-j, 0);
+	for (i=0;i<32;i++)
+
+	for (j=0;j<32;j++)
+
+	{
+
+		m32[i][j]=(u_int8_t)((i*j)>>5);
+
+		a32[i][j]=min(i+j, 31);
+
+		s32[i][j]=max(i-j, 0);
+
+	}
+
+
+
+	for (i=0;i<64;i++)
+
+	for (j=0;j<64;j++)
+
+	{
+
+		m64[i][j]=(u_int8_t)((i*j)>>6);
+
+		a64[i][j]=min(i+j, 63);
+
+		s64[i][j]=max(i-j, 0);
+
 	}
 }
+

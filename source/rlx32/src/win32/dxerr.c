@@ -734,3 +734,4 @@ HRESULT WINAPI DXTraceA( char* strFile, DWORD dwLine, HRESULT hr, char* strMsg, 
 	}
 	return hr;
 }
+

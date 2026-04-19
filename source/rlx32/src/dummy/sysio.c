@@ -54,3 +54,4 @@ char *file_searchpath(const char *name)
 		return (char*)name;
     return NULL;
 }
+

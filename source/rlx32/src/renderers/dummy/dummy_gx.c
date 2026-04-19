@@ -243,3 +243,4 @@ void SetPrimitiveSprites()
 void V3X_EntryPoint(struct RLXSYSTEM *p)
 {
 }
+

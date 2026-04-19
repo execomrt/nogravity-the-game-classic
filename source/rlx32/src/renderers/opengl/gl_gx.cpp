@@ -673,3 +673,4 @@ void SetPrimitiveSprites()
 	GX_OpenGL.UpdateSprite = GL_UpdateSprite;
 	GX_OpenGL.ReleaseSprite = GL_ReleaseSprite;
 }
+

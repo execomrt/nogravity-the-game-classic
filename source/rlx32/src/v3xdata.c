@@ -44,3 +44,4 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 #include "v3xrend.h"
 void  *TRG_Table;
 struct V3XSYSTEM         V3X;
+

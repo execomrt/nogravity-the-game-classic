@@ -142,3 +142,4 @@ int STUB_RegistryWrite(STUB_Registry *regs)
 {
    return 0;
 }
+

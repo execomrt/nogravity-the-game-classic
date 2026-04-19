@@ -185,3 +185,4 @@ void GX_GetGraphicInterfaceRef32(struct GXSYSTEM *pGX, GXGRAPHICINTERFACE *p)
 {
 	*p = GXDrv_32bit;
 }
+

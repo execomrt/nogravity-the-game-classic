@@ -128,3 +128,4 @@ __extern_c
 __end_extern_c
 
 extern  V3X_GXSystem   V3X_Direct3D;
+

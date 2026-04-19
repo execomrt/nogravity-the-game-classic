@@ -297,3 +297,4 @@ void NG_PlayTheEnd(void)
 	MM_heap.pop(-1);
 
 }
+

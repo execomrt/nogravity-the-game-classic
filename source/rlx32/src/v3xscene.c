@@ -1171,3 +1171,4 @@ void V3XScene_Viewport_BuildOVI(V3XSCENE *Scene, V3XOVI *OVI, GXVIEWPORT *ViewPr
     GX.View = prevView;
     return;
 }
+

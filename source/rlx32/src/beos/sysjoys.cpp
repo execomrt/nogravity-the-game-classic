@@ -143,3 +143,4 @@ JOY_ClientDriver *JOY_SystemGetInterface_STD(void)
     sJOY = &JoystickClientBeOS;
 	return sJOY;
 }
+

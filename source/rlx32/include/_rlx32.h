@@ -168,3 +168,4 @@ _RLXEXPORTFUNC void     RLXAPI   SYS_Error(char *fmt, ...);
 _RLXEXPORTFUNC int      RLXAPI   RLX_ErrorGetCodeString(int error_code);
 __end_extern_c
 #endif
+

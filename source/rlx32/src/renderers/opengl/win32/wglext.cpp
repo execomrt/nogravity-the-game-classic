@@ -202,7 +202,7 @@ GLint wglIsExtensionSupportedARB(HDC hdc, const char *extension)
 {
 	static const char *extensions = NULL;
 	const char *start;
-	char *where, *terminator;
+	const char *where, *terminator;
 	if (!extension)
 	{
 		extensions = NULL;
@@ -802,3 +802,4 @@ void wglGetProcAddresses()
 
 	return;
 }
+

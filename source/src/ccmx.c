@@ -381,3 +381,4 @@ void NG_StageReadFile(char *fin, int extrn)
     }
     return;
 }
+

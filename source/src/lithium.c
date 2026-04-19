@@ -698,3 +698,4 @@ void NG_ChangeScreenMode(int mode)
 
     return;
 }
+

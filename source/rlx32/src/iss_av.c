@@ -88,3 +88,4 @@ void *FLZ_AVInit(char *filename)
     FLZ_rate = 22050;
     return fli;
 }
+

@@ -56,10 +56,14 @@ typedef struct _sys_thread
 	SYS_THREADHANDLE		hThread;
 }SYS_THREAD;		
 
-typedef struct _sys_mutex
-{
-	SYS_MUTEXHANDLE			hMutex;
-}SYS_MUTEX;	
+typedef struct _sys_mutex
+
+{
+
+	SYS_MUTEXHANDLE			hMutex;
+
+}SYS_MUTEX;	
+
 
 
 #if defined __WATCOMC__
@@ -125,10 +129,14 @@ _RLXEXPORTFUNC	void		timer_Stop(SYS_TIMER *tm);
 _RLXEXPORTFUNC	void		timer_Reset(SYS_TIMER *tm);
 _RLXEXPORTFUNC	void		timer_Update(SYS_TIMER *tm);
 
-// Mutex
-_RLXEXPORTFUNC  int 		mutex_init(SYS_MUTEX *mutex);
-_RLXEXPORTFUNC  int 		mutex_destroy(SYS_MUTEX *mutex);
-_RLXEXPORTFUNC  int 		mutex_lock(SYS_MUTEX *mutex);
+// Mutex
+
+_RLXEXPORTFUNC  int 		mutex_init(SYS_MUTEX *mutex);
+
+_RLXEXPORTFUNC  int 		mutex_destroy(SYS_MUTEX *mutex);
+
+_RLXEXPORTFUNC  int 		mutex_lock(SYS_MUTEX *mutex);
+
 _RLXEXPORTFUNC  int 		mutex_unlock(SYS_MUTEX *mutex);
 
 _RLXEXPORTFUNC	u_int32_t	timer_sec(void);
@@ -138,3 +146,4 @@ _RLXEXPORTFUNC	void		timer_snooze(u_int32_t ms);
 __end_extern_c
 
 #endif
+

@@ -320,3 +320,4 @@ void GX_GetGraphicInterfaceRef8(struct GXSYSTEM *pGX, GXGRAPHICINTERFACE *p)
 {
 	*p = GXDrv_8bit;
 }
+

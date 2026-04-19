@@ -350,3 +350,4 @@ void NG_ReadGameConfig(void)
     }
     return;
 }
+

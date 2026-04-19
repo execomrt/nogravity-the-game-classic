@@ -928,3 +928,4 @@ MSE_ClientDriver *MSE_SystemGetInterface_STD(void)
 	sMOU = &HIDMouse;
     return sMOU; 
 }
+

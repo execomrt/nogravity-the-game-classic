@@ -345,3 +345,4 @@ void CALLING_C Rend32bit_C_map_sprite_F(V3XPOLY *fce)
 		    FINAL
     return;
 }
+

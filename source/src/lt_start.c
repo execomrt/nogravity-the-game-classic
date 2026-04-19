@@ -1603,3 +1603,4 @@ void NG_ReleaseGameData()
 	NG_ReleaseFonts();
 	NG_FreeGameData();	
 }
+

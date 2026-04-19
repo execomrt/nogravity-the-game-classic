@@ -617,3 +617,4 @@ _RLXEXPORTFUNC void FLI_Draw(FLI_STRUCT *a, int xoff, int yoff)
     GX.csp.pset(xoff, yoff, &a->bitmap);
     return;
 }
+

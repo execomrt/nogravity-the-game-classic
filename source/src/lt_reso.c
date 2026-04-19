@@ -702,3 +702,4 @@ void NG_NetDispatch(void)
     #endif
     return;
 }
+

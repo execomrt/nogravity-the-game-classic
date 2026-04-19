@@ -70,3 +70,4 @@ typedef float V3XSCALAR;
 #define rsqrtf(x)		  1.f / (V3XSCALAR)sqrt((double)(x))
 #define fabs(x)			  (((x)>=CST_ZERO) ? (x) : -(x))
 #endif
+

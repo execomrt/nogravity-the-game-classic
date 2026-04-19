@@ -36,3 +36,4 @@ void GX_GetGraphicInterfaceRef8(struct GXSYSTEM *pGX, GXGRAPHICINTERFACE *p);
 
 
 __end_extern_c
+

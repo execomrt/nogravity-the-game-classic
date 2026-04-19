@@ -141,3 +141,4 @@ int EAX_ChannelSetEnvironment(int channel, V3XA_REVERBPROPERTIES *cfg)
 	     cfg, 
 	     channel<0);
 }
+

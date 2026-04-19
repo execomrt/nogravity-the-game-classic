@@ -45,4 +45,3 @@ static int file_size(SYS_FILEHANDLE stream)
 
 SYS_FILEIO FIO_std = { fopen, fclose, fseek, fread, fgetc, fwrite, ftell, feof, fgets, file_size, file_exists };
 
-

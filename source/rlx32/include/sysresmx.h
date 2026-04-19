@@ -105,3 +105,4 @@ __end_extern_c
 #define filewad_setcurrent(a) FIO_wad = a
 #define filewad_getcurrent() FIO_wad
 #endif
+

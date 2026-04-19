@@ -34,7 +34,6 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 
 #elif defined _WIN32
 #include <windows.h>
-#include <gl/glaux.h>
 #include "win32/wglext.h"
 #define GL_VERSION_1_2
 #define GL_VERSION_1_3
@@ -106,3 +105,4 @@ __extern_c
 __end_extern_c
 
 #endif // __V3XGL_HH
+

@@ -3771,3 +3771,4 @@ void					glxQueryDisplayModes(DEVMODE **ppmode, GLint *pNumModes);
 #endif
 
 #endif /* __glext_h_ */
+

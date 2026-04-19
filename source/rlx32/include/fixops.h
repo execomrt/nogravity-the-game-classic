@@ -177,3 +177,4 @@ extern __inline__ int32_t VMUL_DIV (int32_t x, int32_t y, int32_t z)
 #endif
 
 #endif
+

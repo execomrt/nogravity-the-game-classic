@@ -179,3 +179,4 @@ _RLXEXPORTFUNC JOY_ClientDriver *JOY_SystemGetInterface_STD(void)
 
   return sJOY;
 }
+

@@ -72,3 +72,4 @@ struct DX_DisplayMode
 };
 
 #endif
+

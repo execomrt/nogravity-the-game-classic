@@ -2027,3 +2027,4 @@ void GX_GetGraphicInterface(struct GXSYSTEM *p)
 {
 	return;
 }
+

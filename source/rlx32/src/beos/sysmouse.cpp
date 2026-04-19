@@ -101,3 +101,4 @@ _RLXEXPORTFUNC MSE_ClientDriver *MSE_SystemGetInterface_STD(void)
     sMOU = &MouseClientBeOS;
 	return sMOU;
 }
+

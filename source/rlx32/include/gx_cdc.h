@@ -44,3 +44,4 @@ _RLXEXPORTDATA  extern IMG_Codec IMG_FormList[];
 __end_extern_c
 
 #endif
+

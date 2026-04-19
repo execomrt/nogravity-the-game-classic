@@ -1100,3 +1100,4 @@ void RGB_Build332ColorTable(rgb24_t *lut)
     }
     return;
 }
+

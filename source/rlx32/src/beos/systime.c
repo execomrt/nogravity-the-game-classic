@@ -160,23 +160,43 @@ void thread_exit(int return_value)
 	return;
 }
 
-// BeOS : TODO
-int mutex_init(SYS_MUTEX *mutex)
-{
-	return mutex ? 0 : -1;
-}
-
-int mutex_destroy(SYS_MUTEX *mutex)
-{
-   return -1;
-}
-
-int mutex_lock(SYS_MUTEX *mutex)
-{
-	return 0;
-}
-
-int mutex_unlock(SYS_MUTEX *mutex)
-{
-	return 0;
+// BeOS : TODO
+
+int mutex_init(SYS_MUTEX *mutex)
+
+{
+
+	return mutex ? 0 : -1;
+
 }
+
+
+
+int mutex_destroy(SYS_MUTEX *mutex)
+
+{
+
+   return -1;
+
+}
+
+
+
+int mutex_lock(SYS_MUTEX *mutex)
+
+{
+
+	return 0;
+
+}
+
+
+
+int mutex_unlock(SYS_MUTEX *mutex)
+
+{
+
+	return 0;
+
+}
+

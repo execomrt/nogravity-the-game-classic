@@ -522,3 +522,4 @@ void NG_ReplayRelease(void)
     MM_heap.free(g_pRecordData.pos);
     return;
 }
+

@@ -232,3 +232,4 @@ void NG_HudDisplayCamera(void)
     g_SGSettings.bClearView = 0;
     return;
 }
+

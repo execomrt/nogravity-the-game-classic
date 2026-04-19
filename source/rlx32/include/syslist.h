@@ -56,3 +56,4 @@ _RLXEXPORTFUNC    int   RLXAPI  QueueSearchItem( const Queue *q, void *item, int
 __end_extern_c
 
 #endif
+

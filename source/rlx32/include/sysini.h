@@ -76,3 +76,4 @@ _RLXEXPORTFUNC    int32_t           RLXAPI  GetCF_hexa(char *s, ConfigFile *ini)
 __end_extern_c
 
 #endif
+

@@ -90,3 +90,4 @@ HRESULT WINAPI DXTraceW( char* strFile, DWORD dwLine, HRESULT hr, WCHAR* strMsg,
 #endif //__cplusplus
 
 #endif // _DXERR_H_
+

@@ -336,3 +336,4 @@ void GX_GetSpriteInterfaceRef8(struct GXSYSTEM *pGX, GXSPRITEINTERFACE *p)
 {
 	*p = g_gi;
 }
+

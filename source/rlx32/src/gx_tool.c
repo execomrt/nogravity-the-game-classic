@@ -263,3 +263,4 @@ void IMG_StretchPoint(GXSPRITE *p, GXSPRITE *sp3, int bp, int pitch)
     UNUSED(pitch);
     return;
 }
+

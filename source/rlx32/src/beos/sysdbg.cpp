@@ -56,67 +56,131 @@ void SYS_Debug(char *fmt, ...)
 }
 
 
-void SYS_Msg(char *fmt, ...)
-{
-    char buffer[8192];
-    va_list argptr;
-    va_start(argptr, fmt);
-    vsprintf(buffer, fmt, argptr);
-    va_end(argptr);
-    SYS_Debug(buffer);
-
-	BAlert *box;
-	if (*buffer == '*')
-	{
-		box = new BAlert("",
-							buffer+1,
-							"Abort",
-							"Retry",
-							"Ignore",
-							B_WIDTH_FROM_WIDEST,
-							B_STOP_ALERT);
-
-		if (box)
-		{
-			switch(	box->Go() )
-			{
-				case 0:
-					exit(-1);
-				break;
-				case 1:
-					exit(-1);
-				break;
-			}
-		}
-
-	}
-	else
-	{
-		box = new BAlert("",
-			*buffer == '!' ? buffer + 1 : buffer,
-			"Ok",
-			NULL,
-			NULL,
-			B_WIDTH_FROM_WIDEST,
-			( *buffer == '!' ? B_WARNING_ALERT : B_INFO_ALERT)
-
-		);
-		if (box)
-		{
-			box->Go();
-		}
-	}
-    return;
-}
-
-void SYS_Error(char *fmt, ...)
-{
-	char tmp[1024];
-    va_list argptr;
-    va_start(argptr, fmt);
-    vsprintf(tmp, fmt, argptr);
-    va_end(argptr);
-    SYS_Debug(tmp);
-	SYS_Msg("*%s\nPress Retry to debug application\n",tmp);
-	return;
+void SYS_Msg(char *fmt, ...)
+
+{
+
+    char buffer[8192];
+
+    va_list argptr;
+
+    va_start(argptr, fmt);
+
+    vsprintf(buffer, fmt, argptr);
+
+    va_end(argptr);
+
+    SYS_Debug(buffer);
+
+
+
+	BAlert *box;
+
+	if (*buffer == '*')
+
+	{
+
+		box = new BAlert("",
+
+							buffer+1,
+
+							"Abort",
+
+							"Retry",
+
+							"Ignore",
+
+							B_WIDTH_FROM_WIDEST,
+
+							B_STOP_ALERT);
+
+
+
+		if (box)
+
+		{
+
+			switch(	box->Go() )
+
+			{
+
+				case 0:
+
+					exit(-1);
+
+				break;
+
+				case 1:
+
+					exit(-1);
+
+				break;
+
+			}
+
+		}
+
+
+
+	}
+
+	else
+
+	{
+
+		box = new BAlert("",
+
+			*buffer == '!' ? buffer + 1 : buffer,
+
+			"Ok",
+
+			NULL,
+
+			NULL,
+
+			B_WIDTH_FROM_WIDEST,
+
+			( *buffer == '!' ? B_WARNING_ALERT : B_INFO_ALERT)
+
+
+
+		);
+
+		if (box)
+
+		{
+
+			box->Go();
+
+		}
+
+	}
+
+    return;
+
 }
+
+
+
+void SYS_Error(char *fmt, ...)
+
+{
+
+	char tmp[1024];
+
+    va_list argptr;
+
+    va_start(argptr, fmt);
+
+    vsprintf(tmp, fmt, argptr);
+
+    va_end(argptr);
+
+    SYS_Debug(tmp);
+
+	SYS_Msg("*%s\nPress Retry to debug application\n",tmp);
+
+	return;
+
+}
+

@@ -1315,3 +1315,4 @@ void GX_EntryPoint(struct RLXSYSTEM *p)
 	GET_GX()->Client = &GX_DDraw;
     return;
 }
+

@@ -473,3 +473,4 @@ void NG_WeaponUpdate(void)
     }
     return;
 }
+

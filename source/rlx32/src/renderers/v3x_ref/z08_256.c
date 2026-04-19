@@ -241,3 +241,4 @@ void CALLING_C Rend8bit_Fix_tex_alpha(V3XPOLY *fce)
 		    FINAL
     return;
 }
+

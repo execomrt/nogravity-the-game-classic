@@ -184,3 +184,4 @@ void GX_GetGraphicInterfaceRef16(struct GXSYSTEM *pGX, GXGRAPHICINTERFACE *p)
 {
 	*p = GXDrv_16bit;
 }
+

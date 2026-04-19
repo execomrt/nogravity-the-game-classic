@@ -195,3 +195,4 @@ void STUB_CheckUp(void *hwnd)
 
     return;
 }
+

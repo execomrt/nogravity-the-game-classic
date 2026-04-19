@@ -1246,3 +1246,4 @@ void V3XA_EntryPoint(struct RLXSYSTEM *p)
 {
 	V3XA.Client = &V3XA_DS;
 }
+

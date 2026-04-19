@@ -552,3 +552,4 @@ void V3XMaterials_LoadFromMesh(V3XMESH *Obj)
 		V3XMaterial_LoadTextures( Mat );
     return;
 }
+

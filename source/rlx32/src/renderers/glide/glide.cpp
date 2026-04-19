@@ -928,3 +928,4 @@ void V3X_EntryPoint(struct RLXSYSTEM *p)
     g_pRLX->pV3X->Client = &V3X_Glide;
     return;
 }
+

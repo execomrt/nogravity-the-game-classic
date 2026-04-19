@@ -165,3 +165,4 @@ _V3XEXPORTUNC void RLXAPI V3X_EntryPoint(struct RLXSYSTEM *p)
 	g_pApp = (sysApplication*)g_pRLX->pApplication;
     return;
 }
+

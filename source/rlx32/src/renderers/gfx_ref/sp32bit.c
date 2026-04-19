@@ -503,3 +503,4 @@ void GX_GetSpriteInterfaceRef32(struct GXSYSTEM *pGX, GXSPRITEINTERFACE *p)
 {
 	*p = g_gi;
 }
+

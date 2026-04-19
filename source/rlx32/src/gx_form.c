@@ -154,3 +154,4 @@ void IMG_LoadFnSprite(char *file, GXSPRITE *sp, int options)
     }
     return;
 }
+

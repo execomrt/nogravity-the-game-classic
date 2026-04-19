@@ -19,7 +19,7 @@
 
 #define NO_DEFLATE
 
-#include "zlib.h"
+#include <zlib.h>
 
 extern SYS_FILEIO FIO_gzip;
 
@@ -851,3 +851,4 @@ SYS_FILEIO FIO_gzip =
 	fzip_fputc,
 	fzip_fflush,
 };
+

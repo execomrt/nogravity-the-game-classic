@@ -146,3 +146,4 @@ __end_extern_c
 #define CSP_WriteText(texte, xx, yy, Fonte)          CSP_DrawText(texte, xx, yy, Fonte, GX.csp_cfg.put)
 #define CSP_WriteCenterText(texte, yy, Fonte)       CSP_DrawCenterText(texte, yy, Fonte, GX.csp_cfg.put)
 #endif
+

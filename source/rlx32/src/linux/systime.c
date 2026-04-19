@@ -191,3 +191,4 @@ int mutex_unlock(SYS_MUTEX *mutex)
   SDL_mutexV((SDL_mutex *)mutex->hMutex);
   return 0;
 }
+

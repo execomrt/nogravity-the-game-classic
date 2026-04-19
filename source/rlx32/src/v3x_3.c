@@ -1175,3 +1175,4 @@ V3XPOLY *V3XPoly_XYClipping(V3XPOLY *clip)
     clip->visible=1;
     return clip;
 }
+

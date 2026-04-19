@@ -125,3 +125,4 @@ _RLXEXPORTFUNC    u_int8_t   RLXAPI **REALCOLOR_LoadFn(const char *xpal);
 __end_extern_c
 
 #endif
+

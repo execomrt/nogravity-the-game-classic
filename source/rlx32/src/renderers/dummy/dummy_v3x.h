@@ -39,3 +39,4 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 #include "v3xrend.h"
 
 #endif // __V3XGL_HH
+

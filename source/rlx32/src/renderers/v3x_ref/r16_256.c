@@ -410,3 +410,4 @@ void CALLING_C Rend16bit_C_map_phong(V3XPOLY *fce)
 		    FINAL
     return;
 }
+

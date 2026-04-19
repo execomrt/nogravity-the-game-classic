@@ -109,3 +109,4 @@ _RLXEXPORTFUNC    GXSPRITEGROUP       RLXAPI *FLI_LoadToSpriteGroup(const char *
 __end_extern_c
 
 #endif
+

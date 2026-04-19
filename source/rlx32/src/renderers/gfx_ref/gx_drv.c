@@ -121,3 +121,4 @@ void RLXAPI GX_GetGraphicInterface(struct GXSYSTEM	*pGX)
 
     return;
 }
+

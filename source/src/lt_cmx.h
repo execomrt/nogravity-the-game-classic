@@ -80,3 +80,4 @@ enum {
     t_CS_ADD_SCORE_HIDE, t_CS_BONUS, 
     t_AD_ADD_AIM, t_AD_FAILED, t_AD_EXPLODE, t_AD_SUCCESS
 };
+

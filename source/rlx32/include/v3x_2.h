@@ -73,3 +73,4 @@ _RLXEXPORTFUNC    V3XPOLY  RLXAPI *V3XPoly_NewFromPipeline(void);
 __end_extern_c
 
 #endif
+

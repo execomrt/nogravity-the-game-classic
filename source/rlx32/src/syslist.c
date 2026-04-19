@@ -364,3 +364,4 @@ void QueueSort(Queue *q, int (*sort_function)( const void *a, const void *b))
     }
     return;
 }
+

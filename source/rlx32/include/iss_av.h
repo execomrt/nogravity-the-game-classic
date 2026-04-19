@@ -45,3 +45,4 @@ _RLXEXPORTFUNC int  RMovie_Poll(RMOVIE_HANDLE *handle, int command);
 __end_extern_c
 
 #endif
+

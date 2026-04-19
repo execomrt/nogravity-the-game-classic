@@ -405,3 +405,4 @@ GI_Descriptor *GI_GetBasicDescriptor(GI_Descriptor *GI)
     GI->GetText  = GetText;
     return GI;
 }
+

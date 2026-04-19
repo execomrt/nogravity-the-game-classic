@@ -154,3 +154,4 @@ void RLXAPI v3xpoly_SortByTexture( V3XPOLY **si, V3XPOLY **sj)
     if (sk<sj) v3xpoly_SortByTexture(sk, sj);
     return;
 }
+

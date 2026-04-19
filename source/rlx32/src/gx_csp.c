@@ -469,3 +469,4 @@ _RLXEXPORTFUNC void CSP_Resize(GXSPRITE *sp, int lx, int ly, int bpp)
     sp->LY =ly;
     return;
 }
+

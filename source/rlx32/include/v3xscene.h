@@ -387,3 +387,4 @@ _RLXEXPORTFUNC int RLXAPI V3XVECTOR_IsVisible(V3XSCENE *Scene, V3XVECTOR *start,
 _RLXEXPORTFUNC void RLXAPI V3XCL_MESH_Optimize(V3XCL_MESH *mesh, V3XSCENE *scene, V3XVECTOR *pos, unsigned mode);
 __end_extern_c
 #endif
+

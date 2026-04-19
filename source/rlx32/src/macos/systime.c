@@ -181,3 +181,4 @@ int mutex_unlock(SYS_MUTEX *mutex)
 	pthread_mutex_unlock((pthread_mutex_t*)&mutex->hMutex);
 	return 0;
 }
+

@@ -53,3 +53,4 @@ _RLXEXPORTFUNC	  V3XA_FILECODEC *V3XA_CodecFind(char *filename);
 
 __end_extern_c
 #endif
+

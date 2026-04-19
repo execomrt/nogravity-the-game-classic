@@ -83,3 +83,4 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 		if (d<radius) flags |= V3XCLIPPED_SIDE; \
     }\
 }
+

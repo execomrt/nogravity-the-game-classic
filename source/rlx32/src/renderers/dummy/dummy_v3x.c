@@ -125,4 +125,3 @@ V3X_GXSystem V3X_OpenGS=
     1 // Texture en (256>>1)=128x128 par defaut
 };
 
-

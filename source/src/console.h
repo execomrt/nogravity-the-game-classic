@@ -37,3 +37,4 @@ __extern_c
 	void sysConSetFont(GXSPRITEGROUP *font);
 __end_extern_c
 #endif // _CONSOLE_HH
+

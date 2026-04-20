@@ -26,10 +26,7 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 
 #define MAXRECVBUFFER 4096
 #define MAXSENDBUFFER 4096
-// LZ Packet compression
-//#define LZ
-// Asynchronous com
-//#define ASYNC
+#ifdef DX6
 
 #define IDIRECTPLAY4_OR_GREATER
 #include <stdio.h>
@@ -829,3 +826,5 @@ NET_ClientDriver *NET_GetDirectPlayInterface(void *hwnd, const void *cGuid)
     return &net_dplay;    
 }
 
+
+#endif // DX6

@@ -19,38 +19,13 @@
 #ifndef __W32_DX_HH
 #define __W32_DX_HH
 
-//#define _SYS_DXBREAK_ON_ERRORS
-
-#ifdef _DEBUG
-#if defined DX9
-#include <dxerr9.h>
-#define DXGetErrorDescription	DXGetErrorDescription9
-#elif defined DX81 && !defined _XBOX
-#include <dxerr8.h>
-#define DXGetErrorDescription	DXGetErrorDescription8
-#elif defined DX8
-#include <dxerr8.h>
-#define DXGetErrorDescription	DXGetErrorString8
-#else
-#include "dxerr.h"
-#endif
-
-#ifndef SYS_DBG
-
-#ifdef __SYSDBG_HH
-#define SYS_DBG SYS_Debug
-#else
-#define SYS_DBG 
-#endif
-
-#endif
 
 __inline int __SYS_DXTRACE(const char *file, int line, HRESULT hr)
 {	
 	if (hr)
 	{		
 		char tmp[1024];
-		sprintf(tmp, "%s(%d) : %s\n", file, line, DXGetErrorDescription(hr));
+		sprintf(tmp, "%s(%d) : 0h%08X\n", file, line, hr);
 		OutputDebugString(tmp);
 #ifdef _SYS_DXBREAK_ON_ERRORS
 		 __asm int 3
@@ -71,5 +46,5 @@ struct DX_DisplayMode
 	int					RefreshRate;
 };
 
-#endif
+
 

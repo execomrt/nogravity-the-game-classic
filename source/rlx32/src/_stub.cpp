@@ -30,8 +30,11 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 #include <string.h>
 #ifdef _WINDOWS
 #define INITGUID
+
+#ifdef DX6
 #include <dplay.h>
 DEFINE_GUID(STUB_GUID, 0xdbd83641, 0xe44, 0x11d1, 0xa3, 0x9, 0x0, 0xa0, 0x24, 0x5a, 0x36, 0x78);
+#endif
 
 #endif
 #include "_rlx32.h"
@@ -165,7 +168,7 @@ static void STUB_CheckSystem(void *hwnd)
 	RLX.pV3X = &V3X;
     sysInitFS();
 
-#ifdef WIN32
+#ifdef DX6
 	sNET = NET_GetDirectPlayInterface(hwnd, &STUB_GUID);
 	SYS_ASSERT(sNET);
 #endif

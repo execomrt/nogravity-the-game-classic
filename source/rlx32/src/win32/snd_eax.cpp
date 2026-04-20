@@ -29,7 +29,6 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 #include <initguid.h>
 #include <stdio.h>
 
-#include <EAX/eax.h>
 #include "_rlx32.h"
 #include "systools.h"
 #include "sysresmx.h"
@@ -39,6 +38,9 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 #include "snd_eax.h"
 #include "win32/w32_dx.h"
 
+#ifdef HAVE_EAX
+
+#include <EAX/eax.h>
 static struct _v3xa_reverbproperties EAX_cfg;
 
 int EAX_SetProperty(LPKSPROPERTYSET pPropertySet, struct _v3xa_reverbproperties *cfg, int mode)
@@ -142,3 +144,9 @@ int EAX_ChannelSetEnvironment(int channel, V3XA_REVERBPROPERTIES *cfg)
 	     channel<0);
 }
 
+#else
+int EAX_ChannelSetEnvironment(int channel, V3XA_REVERBPROPERTIES* cfg)
+{
+	return 0;
+}
+#endif

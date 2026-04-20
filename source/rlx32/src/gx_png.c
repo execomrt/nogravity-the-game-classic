@@ -30,6 +30,7 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 #include <zlib.h>
 #define _ZLIB_H
 #include <png.h>
+#include <pngstruct.h>
 
 #include "_rlx32.h"
 #include "systools.h"
@@ -77,7 +78,7 @@ static void pngx_error(png_structp png_ptr, png_const_charp message)
 #ifdef _DEBUG
 	SYS_Msg("!%s", message);
 #endif
-	longjmp(png_ptr->jmpbuf, 1);
+//	longjmp(png_ptr->jmpbuf, 1);
 }
 
 static void pngx_warning(png_structp png_ptr, png_const_charp message)
@@ -121,11 +122,13 @@ if (!pClut)
 	info_ptr = png_create_info_struct(png_ptr);
 	png_read_info(png_ptr, info_ptr);  /* read all PNG info up to image data */
 
+	/*
 	if (setjmp(png_ptr->jmpbuf))
 	{
 		png_destroy_read_struct(&png_ptr, &info_ptr, NULL);
 		return NULL;
 	}
+	*/
 	
 	out_buffer = 0;	
 	

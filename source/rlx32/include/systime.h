@@ -31,7 +31,7 @@ Prepared for public release: 02/24/2004 - Stephane Denis, realtech VR
 
 #define SYS_TIMER_FLAGS_START	1
 #define SYS_TIMER_FLAGS_NOSKIP  2
-
+#include "_rlx32.h"
 // timer
 typedef struct _sys_timerhandle
 {

@@ -52,43 +52,7 @@ static int32_t					gl_lx,
 static int						gl_bpp,
 								gl_nDisplayModeCount;
 static GXDISPLAYMODEHANDLE		gl_nCurrentDisplayModeGL;
-// Error management
-void SYS_Debug(char *fmt, ...)
-{
-    FILE *in;
-    in = fopen("debug.txt", "a+t");
-    if (in)
-    {
-        char buffer[8192];
-        va_list argptr;
-        va_start(argptr, fmt);
-        vsprintf(buffer, fmt, argptr);
-        fprintf(in, "%s\n", buffer);
-		strcat(buffer, "\n");
-		OutputDebugString(buffer);
-        va_end(argptr);
-        fclose(in);
-    }
-    return;
-}
-/*
-char *SYS_GetLastError()
-{
-	LPVOID lpMsgBuf;
-	FormatMessage(
-		FORMAT_MESSAGE_ALLOCATE_BUFFER |
-		FORMAT_MESSAGE_FROM_SYSTEM |
-		FORMAT_MESSAGE_IGNORE_INSERTS,
-		NULL,
-		GetLastError(),
-		MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT), // Default language
-		(LPTSTR) &lpMsgBuf,
-		0,
-		NULL
-	);
-	return (char*)lpMsgBuf;
-}
-*/
+
 // Window management
 #define GetWindowStyle(h) GetWindowLong(h, GWL_STYLE)
 #define GetWindowExStyle(h) GetWindowLong(h, GWL_EXSTYLE)

@@ -490,9 +490,9 @@ void STUB_Default(void)
 *
 */
 
-void STUB_ReadyToRun(void)
+int STUB_ReadyToRun(void)
 {
-	char *resFile = "NOGRAVITY.RMX";
+	const char *resFile = "NOGRAVITY.RMX";
 	
 #ifdef _DEBUG
     SYS_Debug("Open file resource : %s\n", resFile);
@@ -519,7 +519,7 @@ void STUB_ReadyToRun(void)
 	if (!FIO_wad)
 	{
 		SYS_Error("Couldn't find NOGRAVITY.RMX.\n\nGo to http://www.realtech-vr.com/nogravity/ \nand get the No Gravity Game Data package.");
-		return ;
+		return 0;
 	}
 	SYS_ASSERT(FIO_wad);
 
@@ -535,7 +535,7 @@ void STUB_ReadyToRun(void)
 	
     V3X.Setup.flags|=V3XOPTION_COLLISION;
     V3X.Setup.MaxExtentableObjet = 200;
-    return;
+    return 1;
 }
 /*------------------------------------------------------------------------
 *

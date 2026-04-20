@@ -32,7 +32,7 @@ __extern_c
 	_RLXEXPORTFUNC    void   RLXAPI STUB_Warning(char *, ...);
 	_RLXEXPORTFUNC    int    RLXAPI STUB_TaskControl(void);
 	_RLXEXPORTFUNC    void   RLXAPI STUB_QuitRequested(void);
-	_RLXEXPORTFUNC    void   RLXAPI STUB_ReadyToRun(void);
+	_RLXEXPORTFUNC    int    RLXAPI STUB_ReadyToRun(void);
 	_RLXEXPORTFUNC    void   RLXAPI STUB_CheckUp(void *);
 	_RLXEXPORTFUNC    void   RLXAPI STUB_StartUp(void);
 	_RLXEXPORTFUNC    void   RLXAPI STUB_MainCode(void);

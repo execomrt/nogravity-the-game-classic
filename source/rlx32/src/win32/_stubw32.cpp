@@ -184,7 +184,7 @@ static void GetModuleDirectory(LPSTR defaut)
         }
     }
     GetCurrentDirectory(256, szActualFolder);
-    SetCurrentDirectory(tex);
+    
     return;
 }
 static HWND CreateAppWindow(HINSTANCE hInstance)
@@ -245,7 +245,10 @@ int CALLBACK WinMain(_In_ HINSTANCE hInstance,
 	g_hWnd = h;
 	STUB_OsCustom(lpCmdLine);
     STUB_CheckUp(h);
-    STUB_ReadyToRun();
+	if (!STUB_ReadyToRun())
+	{
+		return -1;
+	}
     RLX.System.Running = true;
     STUB_MainCode();
     STUB_Down();

@@ -48,7 +48,7 @@ static char *YesNo[]={"no", "yes"};
 
 char static *SaveKey(u_int8_t *table)
 {
-	char tex[256];
+	static char tex[256];
     char *s=tex;
     int i;
     *s = 0;

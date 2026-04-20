@@ -41,7 +41,7 @@ endif()
 # ---------------------------------------------------------------------------
 if(MSVC)
     add_compile_options(/W3 /MP)
-    add_compile_definitions(_MBCS)
+    add_compile_definitions(_MBCS _CRT_SECURE_NO_WARNINGS NOMINMAX)
 else()
     # GCC/Clang: match original warning level roughly, enable position-
     # independent code for shared libs, and pull in the C99/C++11 baseline.
@@ -105,16 +105,19 @@ if(NOT ZLIB_FOUND)
     endforeach()
 endif()
 
-# ---- libpng ----------------------------------------------------------------
+
+# ---- libpng -----------------------------------------------------------------
 find_package(PNG QUIET)
 if(NOT PNG_FOUND)
-    message(STATUS "libpng not found – fetching v1.6.43")
+    message(STATUS "libpng not found - fetching v1.6.43")
     set(PNG_SHARED OFF CACHE BOOL "" FORCE)
     set(PNG_STATIC ON  CACHE BOOL "" FORCE)
     set(PNG_TESTS  OFF CACHE BOOL "" FORCE)
     set(PNG_TOOLS  OFF CACHE BOOL "" FORCE)
+
     set(_save_CMAKE_SKIP_INSTALL_RULES ${CMAKE_SKIP_INSTALL_RULES})
     set(CMAKE_SKIP_INSTALL_RULES ON)
+
     FetchContent_Declare(
         libpng
         GIT_REPOSITORY https://github.com/pnggroup/libpng.git
@@ -122,12 +125,19 @@ if(NOT PNG_FOUND)
         GIT_SHALLOW    TRUE
     )
     FetchContent_MakeAvailable(libpng)
+
     set(CMAKE_SKIP_INSTALL_RULES ${_save_CMAKE_SKIP_INSTALL_RULES})
+
     if(TARGET png_static AND NOT TARGET PNG::PNG)
         add_library(PNG::PNG ALIAS png_static)
     elseif(TARGET png AND NOT TARGET PNG::PNG)
         add_library(PNG::PNG ALIAS png)
     endif()
+
+    # keep these for consumers in this project
+    set(NG_LIBPNG_FETCHED TRUE)
+    set(NG_LIBPNG_SOURCE_DIR "${libpng_SOURCE_DIR}")
+    set(NG_LIBPNG_BINARY_DIR "${libpng_BINARY_DIR}")
 endif()
 
 # ---- libogg / libvorbis ----------------------------------------------------
@@ -431,6 +441,14 @@ add_library(v3x STATIC
 # Linux port also needs gx_alloc.c (present in autoconf source list, absent on Windows)
 if(NOT PLATFORM_WINDOWS)
     target_sources(v3x PRIVATE ${RLX32_DIR}/src/gx_alloc.c)
+endif()
+
+
+if(NG_LIBPNG_FETCHED)
+    target_include_directories(v3x PRIVATE
+        "${NG_LIBPNG_SOURCE_DIR}"
+        "${NG_LIBPNG_BINARY_DIR}"
+    )
 endif()
 
 target_include_directories(v3x PUBLIC
